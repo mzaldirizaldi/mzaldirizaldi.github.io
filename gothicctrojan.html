@@ -8,6 +8,7 @@
     <link href="bootstrap-5.1.3-dist/css/styles.css" rel="stylesheet">
     <link href="bootstrap-5.1.3-dist/css/color.css" rel="stylesheet">
     <link href="bootstrap-5.1.3-dist/css/video2.css" rel="stylesheet">
+    <link href="bootstrap-5.1.3-dist/css/btnbacktotop.css" rel="stylesheet">
     <title>Gothicc Trojan</title>
   </head>
 <body class="bg-dark text-secondary">
@@ -37,6 +38,11 @@
     </div>
 </nav>
 <header>
+    <!-- Back to top button -->
+<button type="button" class="btn btn-light btn-circle btn-floating" id="btn-back-to-top">
+  <i class="fas fa-arrow-up justify-content-center fw-bold">↑</i>
+</button>
+
   <div class="overlay"></div>
   <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
     <source src="https://cdn.discordapp.com/attachments/919782636568850484/1009467762462171207/gothicctrojan.mp4" type="video/mp4">
@@ -47,7 +53,7 @@
                   <h1 class="display-4 bg-dark mt-5 text-light">GOTHICC TROJAN</h1>
         <div class="row justify-content-md-center mt-3">
             <div class="col-md-auto">
-                <a href="#projectsnavigate" class="btn btn-dark btn-outline-white btn-lg text-white" role="button">Download Here</a>
+                <a href="#downloadgame" class="btn btn-dark btn-outline-white btn-lg text-white" role="button">Download Here</a>
             </div>
             </div>
         </div>
@@ -198,9 +204,58 @@
             <p class="fs-4 mt-5 mb-2 lh-lg">^ Player Shooting Mechanic</p>
             <p class="fs-5 lh-lg mb-2 mt-1">This is a basic player shooting mechanic that the player will shoot this tiny balls to the enemy and deal damage by clicking <span class="fw-bold">Right Click</span> on the mouse.
             <img class="img-fluid" src="assets/maincharacter.png">
-                
-                
-            </div> 
+            <p class="fs-4 mt-5 mb-2 lh-lg">^ Enemy Movement</p>
+                <p class="fs-5 lh-lg mb-2 mt-1">The enemy can <span class="fw-bold">search and move towards the player</span>, after a certain range, the enemy can <span class="fw-bold">stop the movement</span>, and if the player move towards the enemy, <span class="fw-bold">the enemy will retreat itself.</span></p>
+                <p class="fs-4 mt-5 mb-2 lh-lg">^ Enemy Shooting</p>
+                <p class="fs-5 lh-lg mb-2 mt-1">The shooting mechanic for the enemy is more or less the same as the player but there is a different thing that is added to the script, because the enemy must <span class="fw-bold">shoot automatically</span> rather than using keyboard inputs like the player does using IEnumerator.</p>
+                <img class="img-fluid" src="assets/enemyshoot.png">
+                <p class="fs-4 mt-5 mb-2 lh-lg">^ Coin/Currency</p>
+                <p class="fs-5 lh-lg mb-2 mt-1">There is a currency system that can be used to upgrade gears and stats for the player to grow, this coin will <span class="fw-bold">drop from the enemy when the enemy is killed</span> and stored in the Player Stats and will be displayed in the game UI.</p>
+                <img class="img-fluid" src="assets/coin.png">
+                <p class="fs-4 mt-5 mb-2 lh-lg">^ Powerups</p>
+                <p class="fs-5 lh-lg mb-2 mt-1">There is a mechanic called powerups where when the player obtain the powerups, <span class="fw-bold">there will be a few bonuses affecting the player’s stats</span>, such as health regeneration or the player model become smaller. More powerups can be added later.</p>
+                <img class="img-fluid" src="assets/powerups.png">
+                <p class="fs-4 mt-5 mb-2 lh-lg">^ Player Stats</p>
+                <p class="fs-5 lh-lg mb-2 mt-1">The player stats consists of health, and coins or currency value.</p>
+                <img class="img-fluid" src="assets/gui.png">
+                <p class="fs-4 mt-5 mb-2 lh-lg">^ Enemy Stats</p>
+                <p class="fs-5 lh-lg mb-2 mt-1">The enemy stats are pretty much the same as the player’s, the one different is the enemy will drop currency if died.</p>
+                <img class="img-fluid" src="assets/enemygui.png">
+                <p class="fs-4 mt-5 mb-2 lh-lg">^ Enemy Spawner</p>
+                <p class="fs-5 lh-lg mb-2 mt-1">The enemy will spawn in a fixed time interval and in a random position as soon as the player starts the scene.</p>
+                <img class="img-fluid mb-5" src="assets/enemyspawner.png">
+                <hr>
+                <nav id="assets"></nav>
+            <nav class="col container-fluid bg-dark bg-img my-5 mt-5">
+            <a class="ms-2">
+            <img src="assets/assets.png" width="140px" height="auto" class="d-inline-block align-top" alt="aboutmetext" id="aboutmetext">
+            </a>
+            </nav>
+            <img class="img-fluid mb-2" src="assets/assetspicture.png">
+            <p class="fs-5 lh-lg mb-2 mt-1">There are imported sprites that we downloaded from a website called Itch.IO and those are:
+            <br>^ <a class="text-white" href="https://totuslotus.itch.io/pixel-coins" target="_blank" rel="noreferrer noopener">Coin,</a>
+            <br>^ <a class="text-white" href="https://superjoe.itch.io/drop-icons" target="_blank" rel="noreferrer noopener">Powerup,</a>
+            <br>^ <a class="text-white" href="https://darkpixel-kronovi.itch.io/rogue-knight" target="_blank" rel="noreferrer noopener">Enemy,</a>
+            <br>^ <a class="text-white" href="https://9e0.itch.io/witches-pack" target="_blank" rel="noreferrer noopener">And Player sprites.</a>
+            <br>While the rest of the prefabs are self made and that is, Enemy Spell, Tile, Ground, Stone, and Player Spell.</p>
+            <hr>    
+            <nav id="animation"></nav>
+            <nav class="col container-fluid bg-dark bg-img my-5 mt-5">
+            <a class="ms-2">
+            <img src="assets/animation.png" width="210px" height="auto" class="d-inline-block align-top" alt="aboutmetext" id="aboutmetext">
+            </a>
+            </nav>
+            <p class="fs-5 lh-lg">Implemented some basic animations for the enemy, coin and the player from the sprites downloaded from Itch.IO</p>
+            <img class="img-fluid mb-5" src="assets/animationpicture.png">
+            <hr>
+            <nav id="downloadgame"></nav>
+            <nav class="col container-fluid bg-dark bg-img my-5 mt-5">
+            <a class="ms-2">
+            <img src="assets/downloadgame.png" width="330px" height="auto" class="d-inline-block align-top" alt="aboutmetext" id="aboutmetext">
+            </a>
+            </nav>
+            <a class="btn btn-primary btn-lg btn-outline-light btn-dark my-4" href="https://drive.google.com/drive/folders/155n6067oUKLwQ4a_nebvTYwFmYrZADjW?usp=sharing" target="_blank" rel="noreferrer noopener" role="button">DOWNLOAD THE GAME HERE ↓ <img class="img-fluid" src="assets/windowsicon.png" width="40px"></a>
+            </div>
         </main>
         </div>
     </div>
@@ -211,5 +266,6 @@
   </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="bootstrap-5.1.3-dist/js/backtotop.js"></script>
 </body>
 </html>
