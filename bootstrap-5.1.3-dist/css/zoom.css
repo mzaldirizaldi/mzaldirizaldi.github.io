@@ -1,0 +1,16 @@
+/* [1] The container */
+.img-hover-zoom-colorize {
+  height: 100%; /* [1.1] Set it as per your need */
+ /* [1.2] Hide the overflowing of child elements */
+}
+
+.img-hover-zoom-colorize img {
+  transition: transform .5s, filter .3s ease-in-out;
+  filter: grayscale(100%);
+}
+
+/* The Transformation */
+.img-hover-zoom-colorize:hover img {
+  filter: grayscale(0);
+  transform: scale(1.020);
+}
